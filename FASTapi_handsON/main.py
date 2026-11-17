@@ -1,11 +1,5 @@
-from fastapi import FastAPI
-
-app = FastAPI()
-
-@app.get("/")
-def home():
-    return {"message": "FastAPI is running"}
-
-@app.get("/health")
-def health():
-    return {"status": "ok"}
+@app.get("/new")
+def new_route():
+    return {
+        "message": "Updated through GitHub Actions!"
+    }
